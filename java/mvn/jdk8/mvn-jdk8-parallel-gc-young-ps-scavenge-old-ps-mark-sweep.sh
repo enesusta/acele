@@ -12,7 +12,7 @@ JAVA_8_JVMS=(
     "
 )
 
-JAVA_TOOL_OPTIONS="-XX:+UseParallelGC -XX:+PrintCommandLineFlags -XX:+PrintGC -XX:+PrintGCDetails"
+JAVA_TOOL_OPTIONS="-XX:+UseParallelGC -XX:+UseParallelOldGC -XX:-UseAdaptiveSizePolicy -XX:+PrintCommandLineFlags -XX:+PrintGC -XX:+PrintGCDetails"
 
 for JVM in ${JAVA_8_JVMS[@]}
 do

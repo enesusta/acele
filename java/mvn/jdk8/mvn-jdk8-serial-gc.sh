@@ -13,9 +13,31 @@ JAVA_8_JVMS=(
 )
 
 JAVA_TOOL_OPTIONS="-XX:+UseSerialGC -XX:+PrintCommandLineFlags -XX:+PrintGC -XX:+PrintGCDetails"
+MAVEN_OPTS="-XX:+UseSerialGC -XX:+PrintCommandLineFlags -XX:+PrintGC -XX:+PrintGCDetails"
+
+cd ..
+cd ..
+cd playground
+
+echo "JVM", "Build Time" > req.csv
+
+function timestamp {
+  echo `python -c 'import datetime; print datetime.datetime.now().strftime("%s.%f")'` 
+}
+
+function diff {
+  echo "$2-$1-$MeasuringCost" | bc
+}
 
 for JVM in ${JAVA_8_JVMS[@]}
 do
     sdk use java ${JVM}
-    java $JAVA_TOOL_OPTIONS -version
+
+    start=`timestamp`
+    mvn package -Djava.version=1.8 -DskipTests=true
+    end=`timestamp`
+    elapsed=`echo $end-$start | bc`
+    echo "Total of $elapsed seconds elapsed for process"
+    echo "$JVM-serial-gc", $elapsed >> req.csv
 done
+
