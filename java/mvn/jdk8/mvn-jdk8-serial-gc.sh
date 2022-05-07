@@ -37,7 +37,6 @@ do
     mvn package -Djava.version=1.8 -DskipTests=true
     end=`timestamp`
     elapsed=`echo $end-$start | bc`
-    echo "Total of $elapsed seconds elapsed for process"
     echo "$JVM-serial-gc", $elapsed >> req.csv
 done
 

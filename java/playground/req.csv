@@ -1,6 +1,16 @@
 JVM, Build Time
-8.332.08.1-amzn-serial-gc, 2.244460
-8.0.332-librca-serial-gc, 2.221411
-8.0.332-sem-serial-gc, 2.019649
-8.0.332-tem-serial-gc, 2.224828
-8.0.332-zulu-serial-gc, 2.297885
+8.332.08.1-amzn-parallel-gc-young-ps-scavenge-old-ps-mark-sweep, 2.159165
+8.0.332-librca-parallel-gc-young-ps-scavenge-old-ps-mark-sweep, 1.823010
+8.0.332-sem-parallel-gc-young-ps-scavenge-old-ps-mark-sweep, 2.041553
+8.0.332-tem-parallel-gc-young-ps-scavenge-old-ps-mark-sweep, 1.856095
+8.0.332-zulu-parallel-gc-young-ps-scavenge-old-ps-mark-sweep, 1.917994
+8.332.08.1-amzn-parallel-gc-young-ps-scavenge-old-ps-mark-sweep-adaptive, 1.857346
+8.0.332-librca-parallel-gc-young-ps-scavenge-old-ps-mark-sweep-adaptive, 1.815939
+8.0.332-sem-parallel-gc-young-ps-scavenge-old-ps-mark-sweep-adaptive, 2.049831
+8.0.332-tem-parallel-gc-young-ps-scavenge-old-ps-mark-sweep-adaptive, 1.835017
+8.0.332-zulu-parallel-gc-young-ps-scavenge-old-ps-mark-sweep-adaptive, 1.903500
+8.332.08.1-amzn-g1-gc, 1.944933
+8.0.332-librca-g1-gc, 1.898421
+8.0.332-sem-g1-gc, 2.026123
+8.0.332-tem-g1-gc, 1.926818
+8.0.332-zulu-g1-gc, 1.990365
