@@ -14,3 +14,8 @@ JVM, Build Time
 8.0.332-sem-g1-gc, 2.026123
 8.0.332-tem-g1-gc, 1.926818
 8.0.332-zulu-g1-gc, 1.990365
+8.332.08.1-amzn-serial-gc, 1.938524
+8.0.332-librca-serial-gc, 1.880530
+8.0.332-sem-serial-gc, 2.037206
+8.0.332-tem-serial-gc, 1.875791
+8.0.332-zulu-serial-gc, 1.928361

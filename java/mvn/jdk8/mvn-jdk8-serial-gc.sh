@@ -19,7 +19,7 @@ cd ..
 cd ..
 cd playground
 
-echo "JVM", "Build Time" > req.csv
+# echo "JVM", "Build Time" > req.csv
 
 function timestamp {
   echo `python -c 'import datetime; print datetime.datetime.now().strftime("%s.%f")'` 
